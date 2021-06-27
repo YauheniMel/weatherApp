@@ -71,3 +71,20 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/RobotoCondensed-Regular.ttf) format("truetype");
+}
+.header {
+  background-color: DarkCyan;
+  padding: 20px 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
