@@ -77,14 +77,39 @@ select {
 }
 .header {
   background-color: DarkCyan;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
+.info {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(DarkCyan));
+  background: linear-gradient(to right, white, DarkCyan);
+  padding-left: 10px;
+}
+.temperature__value {
+  margin-top: 5px;
+  width: 150px;
+  text-align: right;
+  font-size: 18px;
+}
+.temperature__icon {
+  width: 100px;
+  margin-left: 40px;
+}
+
+.wind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 200px;
+}
 body {
   font-family: "Roboto";
 }
 
 .container {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
 }
