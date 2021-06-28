@@ -119,8 +119,45 @@ select {
   font-size: 12px;
 }
 
+.day__temperature {
+  text-align: right;
+}
 .day__icon {
   width: 50px;
+}
+.day__value {
+  margin-top: 5px;
+}
+
+@media (max-width: 530px) {
+  .temperature__icon {
+    width: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .days {
+    display: block;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .day {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .day__temperature {
+    text-align: center;
+  }
+  .day__icon {
+    width: 30px;
+  }
+  .day__value {
+    margin-top: 0;
+  }
 }
 body {
   font-family: "Roboto";

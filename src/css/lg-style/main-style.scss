@@ -10,11 +10,15 @@
 
 .day {
 
-  &__value {
+  &__temperature {
+    text-align: right;
   }
+
   &__icon {
     width: 50px;
   }
-  &__temperature {
+
+  &__value {
+    margin-top: 5px;
   }
 }

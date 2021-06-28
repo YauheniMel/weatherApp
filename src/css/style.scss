@@ -1,7 +1,9 @@
 @import "nullstyle.scss";
 @import "font-styles.scss";
-@import "header-style.scss";
-@import "main-style.scss";
+@import "./lg-style/header-style.scss";
+@import "./lg-style/main-style.scss";
+@import "./md-style/header-style.scss";
+@import "./sm-style/main-style.scss";
 
 body {
   font-family: "Roboto";
