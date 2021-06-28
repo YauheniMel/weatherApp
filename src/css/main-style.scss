@@ -1,0 +1,20 @@
+.main {
+  background: LightSeaGreen;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.day {
+
+  &__value {
+  }
+  &__icon {
+    width: 50px;
+  }
+  &__temperature {
+  }
+}

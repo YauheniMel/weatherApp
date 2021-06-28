@@ -105,6 +105,23 @@ select {
           justify-content: space-between;
   max-width: 200px;
 }
+.main {
+  background: LightSeaGreen;
+}
+
+.days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+}
+
+.day__icon {
+  width: 50px;
+}
 body {
   font-family: "Roboto";
 }
