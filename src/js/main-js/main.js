@@ -5,7 +5,7 @@ const urlWeather5 = `https://api.openweathermap.org/data/2.5/forecast?q=Minsk&ap
 
 fetchData('GET', urlWeather5)
   .then((response) => {
-    console.log(response);
+    // console.log(response);
   })
   .catch((error) => {
     console.error(error);
