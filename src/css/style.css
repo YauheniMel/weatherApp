@@ -141,6 +141,7 @@ select {
   .temperature__icon {
     width: 50px;
     margin-left: 0;
+    margin-top: 15px;
   }
   .temperature__value {
     width: 50px;
