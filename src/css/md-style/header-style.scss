@@ -1,5 +1,21 @@
 @media (max-width: 530px) {
-  .temperature__icon {
-    width: 50px;
+
+  .temperature {
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+      width: 50px;
+      margin-left: 0;
+    }
+
+    &__value {
+      width: 50px;
+      order: 1;
+    }
+  }
+
+  .wind {
+    max-width: 100%;
   }
 }

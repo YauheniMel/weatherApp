@@ -130,8 +130,27 @@ select {
 }
 
 @media (max-width: 530px) {
+  .temperature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .temperature__icon {
     width: 50px;
+    margin-left: 0;
+  }
+  .temperature__value {
+    width: 50px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .wind {
+    max-width: 100%;
   }
 }
 @media (max-width: 380px) {
