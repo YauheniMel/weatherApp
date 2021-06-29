@@ -1,2 +1,3 @@
 import '../css/style.css';
-import fetchData from './fetch-data';
+import './header-js/header';
+import './main-js/main';
