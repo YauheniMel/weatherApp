@@ -1,4 +1,7 @@
-class WeatherToday {
+import renderHeaderElements from './render-header-elements';
+
+class TodayData {
+  data = {};
   constructor(data) {
     this.data = data;
 
@@ -24,14 +27,14 @@ class WeatherToday {
   }
 
   prepareData(obj) {
-    const date = this.getDate(obj.dateValue);
-    const temperature = this.getTemperature(obj.temp);
-    const windDirectionValue = this.getWindDirectionValue(obj.windDirection);
+    obj.time = this.getTime(obj.dateValue);
+    obj.temp = this.getTemperature(obj.temp);
+    obj.windDirectionValue = this.getWindDirectionValue(obj.windDirection);
 
-    console.log(date, temperature, windDirectionValue);
+    renderHeaderElements(obj);
   }
 
-  getDate(d) {
+  getTime(d) {
     const dateObj = new Date(d * 1000);
 
     let minutes = dateObj.getMinutes();
@@ -73,4 +76,4 @@ class WeatherToday {
   }
 }
 
-export default WeatherToday;
+export default TodayData;

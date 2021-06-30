@@ -6,12 +6,6 @@
 .info {
   background: linear-gradient(to right, white, DarkCyan);
   padding-left: 10px;
-
-  &__location {
-  }
-
-  &__date {
-  }
 }
 
 .temperature {
@@ -33,11 +27,12 @@
   display: flex;
   justify-content: space-between;
   max-width: 200px;
+  padding: 0 10px;
 
   &__direction {
-  }
-
-  &__value {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
   }
 }
 

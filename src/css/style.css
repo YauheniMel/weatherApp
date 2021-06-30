@@ -85,6 +85,7 @@ select {
   background: linear-gradient(to right, white, DarkCyan);
   padding-left: 10px;
 }
+
 .temperature__value {
   margin-top: 5px;
   width: 150px;
@@ -104,7 +105,18 @@ select {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 200px;
+  padding: 0 10px;
 }
+.wind__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+}
+
 .main {
   background: LightSeaGreen;
 }
@@ -139,12 +151,12 @@ select {
             justify-content: center;
   }
   .temperature__icon {
-    width: 50px;
+    width: 80px;
     margin-left: 0;
     margin-top: 15px;
   }
   .temperature__value {
-    width: 50px;
+    width: 30px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -186,4 +198,8 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
+}
+
+header, main {
+  padding: 0 10px;
 }
