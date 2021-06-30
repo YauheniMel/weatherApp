@@ -31,8 +31,11 @@
 
   &__direction {
     display: flex;
-    justify-content: space-between;
-    width: 100px;
+    justify-content: flex-start;
+
+    img {
+      margin-left: 10px;
+    }
   }
 }
 
