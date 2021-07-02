@@ -1,15 +1,14 @@
-import renderHeaderElements from './render-header-elements';
+import renderHeaderElements from './render-header-element.js';
 
 class TodayData {
   data = {};
+
   constructor(data) {
     this.data = data;
 
-    this.init();
-  }
-
-  init() {
+    // this.init();
     this.parseData();
+
   }
 
   parseData() {
