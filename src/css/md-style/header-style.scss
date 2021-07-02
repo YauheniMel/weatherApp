@@ -1,0 +1,22 @@
+@media (max-width: 530px) {
+
+  .temperature {
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+      width: 80px;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+
+    &__value {
+      width: 30px;
+      order: 1;
+    }
+  }
+
+  .wind {
+    max-width: 100%;
+  }
+}

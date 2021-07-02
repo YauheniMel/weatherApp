@@ -71,3 +71,137 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/RobotoCondensed-Regular.ttf) format("truetype");
+}
+.header {
+  background-color: DarkCyan;
+  padding: 5px 0;
+}
+
+.info {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(DarkCyan));
+  background: linear-gradient(to right, white, DarkCyan);
+  padding-left: 10px;
+}
+
+.temperature__value {
+  margin-top: 5px;
+  width: 150px;
+  text-align: right;
+  font-size: 18px;
+}
+.temperature__icon {
+  width: 100px;
+  margin-left: 40px;
+}
+
+.wind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 200px;
+  padding: 0 10px;
+}
+.wind__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.wind__direction img {
+  margin-left: 10px;
+}
+
+.main {
+  background: LightSeaGreen;
+}
+
+.days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+}
+
+.day__temperature {
+  text-align: right;
+}
+.day__icon {
+  width: 50px;
+}
+.day__value {
+  margin-top: 5px;
+}
+
+@media (max-width: 530px) {
+  .temperature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .temperature__icon {
+    width: 80px;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .temperature__value {
+    width: 30px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .wind {
+    max-width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .days {
+    display: block;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .day {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .day__temperature {
+    text-align: center;
+  }
+  .day__icon {
+    width: 30px;
+  }
+  .day__value {
+    margin-top: 0;
+  }
+}
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header, main {
+  padding: 0 10px;
+}

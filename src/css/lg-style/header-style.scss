@@ -1,0 +1,43 @@
+.header {
+  background-color: DarkCyan;
+  padding: 5px 0;
+}
+
+.info {
+  background: linear-gradient(to right, white, DarkCyan);
+  padding-left: 10px;
+}
+
+.temperature {
+
+  &__value {
+    margin-top: 5px;
+    width: 150px;
+    text-align: right;
+    font-size: 18px;
+  }
+
+  &__icon {
+    width: 100px;
+    margin-left: 40px;
+  }
+}
+
+.wind {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  padding: 0 10px;
+
+  &__direction {
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+

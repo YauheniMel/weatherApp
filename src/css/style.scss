@@ -1,2 +1,19 @@
 @import "nullstyle.scss";
+@import "font-styles.scss";
+@import "./lg-style/header-style.scss";
+@import "./lg-style/main-style.scss";
+@import "./md-style/header-style.scss";
+@import "./sm-style/main-style.scss";
 
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header, main {
+  padding: 0 10px;
+}

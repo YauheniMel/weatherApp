@@ -1,0 +1,25 @@
+@media (max-width: 380px) {
+
+  .days {
+    display: block;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .day {
+    display: flex;
+    justify-content: space-between;
+
+    &__temperature {
+      text-align: center;
+    }
+
+    &__icon {
+      width: 30px;
+    }
+
+    &__value {
+      margin-top: 0;
+    }
+  }
+}
