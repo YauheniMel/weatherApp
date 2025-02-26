@@ -3,17 +3,23 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
+  mode: 'development',
   entry: {
-    index: './js/index.js',
+    index: path.resolve(__dirname, 'src', 'js'),
+  },
+  devServer: {
+    port: 8082,
+    hot: true,
+    liveReload: true,
+    watchFiles: ["**/*.html", "**/*.scss", "**/*.js"]
   },
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './index.html',
+      template: './src/index.html',
     }),
     new CleanWebpackPlugin(),
   ],
